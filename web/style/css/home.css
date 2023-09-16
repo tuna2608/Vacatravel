@@ -1,0 +1,178 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jul 5, 2023, 11:12:54 PM
+    Author     : tuna
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #00C6FF;
+  --secondary: #0059A8;
+  --light: #EAFCFF;
+  --dark: #002D5A;
+}
+
+.body {
+  z-index: -1;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 70px;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner__cont {
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner__cont-content {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.content-row1 {
+  margin-left: 40px;
+  display: flex;
+  gap: 20px;
+}
+.content-row-header {
+  color: var(--dark);
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.content-row-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.content-row-nav p {
+  color: var(--dark);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.content-row2 {
+  align-items: center;
+  display: flex;
+  height: 70px;
+  background-color: white;
+  border-radius: 35px;
+  padding: 12px 8px 10px 30px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-left: 1px solid #dddd;
+}
+
+.search-title {
+  color: var(--dark);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.search-input {
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.search-icon {
+  height: 54px;
+  width: 54px;
+  background-color: #484848;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-icon i {
+  color: white;
+  font-size: 30px;
+}
+
+.property-cont {
+  width: 100%;
+  max-width: 1440px;
+  padding: 60px 80px;
+}
+
+.property-item {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.property-item-header {
+  position: relative;
+  max-width: 340px;
+  width: 100%;
+}
+
+.property-item-header::after {
+  position: absolute;
+  content: "";
+  height: 6px;
+  width: 50%;
+  border-radius: 3px;
+  background-color: #484848;
+}
+
+.property-item-header p {
+  color: #484848;
+  font-size: 36px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.property-item-shows {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.text-body {
+  color: rgb(134, 134, 134);
+}
+
+/*Text*/
+.text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+
+

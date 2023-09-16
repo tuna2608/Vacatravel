@@ -1,0 +1,172 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jul 6, 2023, 12:32:44 AM
+    Author     : tuna
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #00C6FF;
+    --secondary: #0059A8;
+    --light: #EAFCFF;
+    --dark: #002D5A;
+}
+
+.body {
+    z-index: -1;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.proper__cont {
+    width: 100%;
+    max-width: 1440px;
+    padding: 60px 80px;
+    margin-bottom: 200px;
+}
+
+.proper__cont-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.type-chose {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 30px;
+    color: #484848;
+}
+
+.type {
+    color: #484848;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.type-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 15px 30px;
+    border: 1px solid #9a9a9a;
+    border-radius: 24px;
+}
+
+.type-filter p,
+i {
+    color: #484848;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.proper__cont-content {
+    margin-top: 0%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.card-info {
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    padding: 1.8rem;
+    transition: 0.5s ease-out;
+    overflow: visible;
+}
+
+.card-img {
+    position: relative;
+    width: 380px;
+    height: 340px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-price {
+    position: absolute;
+    bottom: 16px;
+    left: 24px;
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.card-desc {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    gap: 5px;
+}
+.card-title {
+    color: #484848;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card-adr {
+    color: #9a9a9a;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.card-button {
+    display: block;
+    transform: translate(-50%, 125%);
+    width: 100px;
+    border-radius: 1rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+
+/*Hover*/
+.card:hover .card-img{
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+    display: block;
+    transform: translate(-50%, 50%);
+    opacity: 1;
+    z-index: 2;
+}

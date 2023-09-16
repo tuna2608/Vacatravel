@@ -1,0 +1,128 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jul 17, 2023, 10:15:35 PM
+    Author     : tuna
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*:root {
+    --primary: #00C6FF;
+    --secondary: #0059A8;
+    --light: #EAFCFF;
+    --dark: #002D5A;
+}*/
+
+.body {
+  z-index: -1;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 70px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.input-checkbox {
+  height: 20px;
+  width: 20px;
+}
+
+.form-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input {
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #858585;
+  background: #fff;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.password-table {
+  width: 100%;
+}
+
+.password-table {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.table {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.password-input {
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid #858585;
+  background: #fff;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  width: 210px;
+  height: 55px;
+  border-radius: 5px;
+  border: 2px solid #f65151;
+  background: #fff;
+  color: #f65151;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
